@@ -45,9 +45,10 @@ footer::after {
 }
 
 .col-1 {
-	width: 33.333334%;
+	width: 25%;
 	float: left;
 }
+
 @media (min-width: 40rem) {
 
 	[class^=col-] {
@@ -67,12 +68,12 @@ footer::after {
 	.col-2 {
 		width: 33%;
 		margin: 4em;
-		margin-right: 10em;
+		/*margin-right: 10em;*/
 		text-align: justify;
 	}
 
 	.col-1 {
-		width: 16.6666%;
+		width: 25%;
 	}
 }
 
@@ -112,9 +113,9 @@ p:last-of-type {
 .title span {
 	font-weight: 300;
 	display: block;
-	padding-top: 0.8em;
-	font-size: 1.2rem;
-	margin-bottom: 1.5em;
+	padding-top: 0.8rem;
+	font-size: 2.5rem;
+	margin-top: 1em;
 }
 
 
@@ -165,6 +166,10 @@ p:last-of-type {
 .button-dark {
 	color: #232323;
 	border-color: #232323;
+}
+
+.button-small {
+	font-size: 1rem;
 }
 
 .button-dark:hover,
@@ -243,7 +248,9 @@ nav a:focus {
 	background-position: center;
 	padding: 10em 0;
 	color: #FFF;
+	text-align: left;
 }
+
 
 @media (min-width: 60rem) {
 	.home-hero {
@@ -256,9 +263,10 @@ nav a:focus {
 
 .home-about-textbox {
 	background-color: #232323;
-	padding: 3em;
-	width: 100vw;
-	margin-left: -2.5%;
+	/*padding: 3em;*/
+	width: 106.5%;
+	height: auto;
+	margin: 0 -4%;
 	outline: 2px solid #00ff6c;
 	outline-offset: -2.5em;
 	color: #FFF;
@@ -284,6 +292,7 @@ nav a:focus {
 	.home-about-textbox {
 		padding: 5.5em;
 		text-align: justify;
+
 	}
 
 	.home-about-textbox h1 {
@@ -306,10 +315,11 @@ nav a:focus {
 		background-position: center;
 		/*padding-bottom: 10em;*/
 
-		top: -5em;
+		/*top: -5em;*/
 		/*outline-offset: -3.75em;*/
-		left: -5em;
-		margin: -2.5em;
+		/*left: -5em;*/
+		/*margin: -2.5em;*/
+		margin: 0 -2.65%;
 
 	}
 
@@ -335,6 +345,7 @@ nav a:focus {
 /*portfolio*/
 
 .portfolio {
+	/*background-color: gray;*/
 	background-color: #232323;
 	margin: 0 0 0;
 }
@@ -397,8 +408,42 @@ nav a:focus {
 =================== */
 
 .cta {
-	background-color: #00ff6c;
-	padding: 5em 0;
+	background-color: #232323;
+	padding: 3em 0;
+	color: #00ff6c;
+}
+
+.cta h1 {
+	font-weight: 400;
+}
+
+.support {
+	float: center;
+	padding: 2em 0;
+
+}
+
+.support a {
+	color: white;
+
+	text-decoration: none;
+/*	text-transform: uppercase;*/
+	font-size: 1.5rem;
+	font-weight: 300;
+	float: center;
+}
+
+.support i {
+	padding: 0 0.5em;
+	font-size: 2rem;
+	color: #00ff6c;
+}
+
+@media (min-width: 60rem) {
+	.support a {
+		padding: 0 5em;
+	}
+	
 }
 
 
@@ -409,5 +454,19 @@ footer {
 	background: #232323;
 	color: #fff;
 	text-align: left;
-	padding: 5em 0;
+	padding-bottom: 5em;
+	padding-left: 10%;
+}
+
+footer h2 {
+	color: #00ff6c;
+	font-weight: 400;
+}
+
+footer li {
+	padding-bottom: .5em;
+}
+
+footer i {
+	padding: 0.5em .4em;
 }
