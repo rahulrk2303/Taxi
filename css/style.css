@@ -92,6 +92,7 @@ h1 {
 	font-weight: 300;
 	font-size: 1.7rem;
 	margin-top: 0;
+	text-align: center;
 }
 
 p {
@@ -113,9 +114,9 @@ p:last-of-type {
 .title span {
 	font-weight: 300;
 	display: block;
-	padding-top: 0.8rem;
-	font-size: 2rem;
-	margin-top: 1em;
+	padding-top: 0.5rem;
+	font-size: 1.5rem;
+	margin-top: .5em;
 }
 
 
@@ -132,12 +133,14 @@ p:last-of-type {
 
 @media (min-width:60rem){
 	p {
-		font-size: 1.2rem;
+		font-size: 1rem;
 		line-height: 1.6;
 	}
 	.title{
-		font-size: 3.2rem; 
+		font-size: 3vw; 
+		text-align: center;
 	}
+
 }
 
 /*button*/
@@ -183,6 +186,7 @@ p:last-of-type {
 	.button {
 		font-size: 1.5rem;
 	}
+
 }
 
 
@@ -260,8 +264,9 @@ nav a:focus {
 	background-position: center;
 	padding: 10em 0;
 	color: #FFF;
-	text-align: left;
-	padding-left: 1em;
+	/*text-align: left;*/
+	padding-left: 2em;
+	/*float: center;*/
 }
 
 
@@ -269,7 +274,13 @@ nav a:focus {
 	.home-hero {
 		height: 100vh;
 		padding-top: 30vh;
+		text-align: left
 	}
+	.home-hero h1 {
+
+		text-align: left;
+	}
+	
 }
 
 /*about*/
@@ -365,14 +376,15 @@ nav a:focus {
 /*portfolio*/
 
 .portfolio {
-	/*background-color: gray;*/
 	background-color: #232323;
+/*	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/portfolio-bg.jpg");*/
 	margin: 0 0 0;
 }
 
 .portfolio h1{
 	padding-top: 1em;
 	color: #00ff6c;
+
 }
 
 .port-item {
@@ -382,7 +394,8 @@ nav a:focus {
 
 .port-item img {
 	display: inline-block;
-	padding-bottom: 2em;
+	padding: 1em 2em;
+
 	opacity: 0.6;
 	transition: .5s ease;
 	backface-visibility: hidden;
@@ -422,13 +435,13 @@ nav a:focus {
 		overflow: hidden;
 	}
 
-	.port-desc {
+	/*.port-desc {
 		transform: translateY(150%);
 	}
 
 	.port-item:hover .port-desc {
 		transform: translateY(0%);
-	}
+	}*/
 }
 
 
@@ -443,6 +456,7 @@ nav a:focus {
 
 .cta h1 {
 	font-weight: 400;
+	float: center;
 }
 
 .support {
@@ -509,20 +523,26 @@ footer i {
 
 .container2 {
   position: relative;
-  float: right;
-  margin: -28em 6em;
+  float: center;
+  /*margin: -20em 6em;*/
+  margin-top: 5em;
+  margin-left: 10vw;
+/*  margin-left: 15vw;
+  margin-right: 15vw;*/
   padding: 2em;
   width: 30%;
-  border: 0.25em solid #00ff6c;
+  border: 0.1em solid #00ff6c;
   border-radius: 1.5em;
-  background-color: rgba(23,23,23,0.7)
+  background-color: rgba(23,23,23,0.8);
+  min-width: 28em;
+
 }
 
 input[type=text], input[type=email], input[type=password] {
   margin: 10px 20px 0px 10px;
   width: 90%;
   padding: 12px;
-  border: 1px solid #black;
+  border: 2px solid #00ff6c;
   border-radius: 4px;
   resize: vertical;
 }
@@ -559,9 +579,9 @@ button {
 
 
 
-button:hover {
+/*button:hover {
   opacity: 0.8;
-}
+}*/
 
 input[type=submit]:hover {
   margin: 20px;
@@ -570,4 +590,22 @@ input[type=submit]:hover {
 
 .hide {
   display: none;
+}
+
+@media (min-width:25em)
+{
+	.container2{
+		min-width: 28em;
+		float: right;
+		margin: 2em 5rem;
+	}
+}
+
+@media (min-width:60em)
+{
+	.container2{
+		min-width: 28em;
+		margin: -27.5% 6em;
+		float: right;
+	}
 }
