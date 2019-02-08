@@ -45,7 +45,7 @@ footer::after {
 }
 
 .col-1 {
-	width: 25%;
+	width: 50%;
 	float: left;
 }
 
@@ -114,7 +114,7 @@ p:last-of-type {
 	font-weight: 300;
 	display: block;
 	padding-top: 0.8rem;
-	font-size: 2.5rem;
+	font-size: 2rem;
 	margin-top: 1em;
 }
 
@@ -136,7 +136,7 @@ p:last-of-type {
 		line-height: 1.6;
 	}
 	.title{
-		font-size: 3.7rem; 
+		font-size: 3.2rem; 
 	}
 }
 
@@ -239,6 +239,18 @@ nav a:focus {
 	}
 }
 
+@media (min-width:25rem){
+	.logo{
+		float: center;
+	}
+
+	nav {
+		float: center;
+	}
+
+}
+
+
 
 /*home-hero*/
 
@@ -249,6 +261,7 @@ nav a:focus {
 	padding: 10em 0;
 	color: #FFF;
 	text-align: left;
+	padding-left: 1em;
 }
 
 
@@ -272,6 +285,8 @@ nav a:focus {
 	color: #FFF;
 	text-align: justify;
 	position: relative;
+	min-width: 35rem;
+	padding: 5.5em;
 }
 
 .home-about-textbox h1 {
@@ -290,8 +305,9 @@ nav a:focus {
 	}
 
 	.home-about-textbox {
-		padding: 5.5em;
+		padding: 5em;
 		text-align: justify;
+		min-width: 25rem;
 
 	}
 
@@ -307,8 +323,8 @@ nav a:focus {
 	}
 
 	.home-about {
-		background-image: url(../img/about-bg.png);
-/*		background-color: #232323;*/
+		/*background-image: url(../img/about-bg.png);*/
+		background-color: #232323;
 		background-repeat: no-repeat;
 		right: 0;
 		background-size: cover;
@@ -321,6 +337,7 @@ nav a:focus {
 		/*margin: -2.5em;*/
 		margin: 0 -2.65%;
 
+
 	}
 
 	.home-about-textbox {
@@ -330,6 +347,9 @@ nav a:focus {
 		margin-left: 0;
 /*		top: -5em;
 */		text-align: justify;
+		min-width: 45rem; 
+		left: 50%;
+		transform: translateX(-50%);
 	}
 
 	.home-about-textbox h1 {
@@ -421,6 +441,10 @@ nav a:focus {
 	float: center;
 	padding: 2em 0;
 
+}
+
+.support li {
+	display: inline-block;
 }
 
 .support a {
