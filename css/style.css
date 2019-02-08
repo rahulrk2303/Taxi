@@ -193,11 +193,15 @@ p:last-of-type {
 /*header*/
 
 header {
-	position: absolute;
-	margin-top: 1em;
+	position: fixed;
+	/*margin-top: 1em;*/
 	left: 0;
 	right: 0;
-	margin: 1em;
+/*	margin: 1em;*/
+	padding: 1em 2em;
+	top: 0;
+	background-color: black;
+	z-index: 9;
 }
 
 .logo {
@@ -212,6 +216,7 @@ nav ul {
 	margin: 0;
 	padding: 0;
 	list-style: none;
+	overflow: hidden;
 }
 
 nav li {
@@ -223,7 +228,7 @@ nav a {
 	font-weight: 900;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: .8rem;
+	font-size: 1rem;
 	padding: .5em;
 	color: white;
 }
@@ -376,7 +381,8 @@ nav a:focus {
 /*portfolio*/
 
 .portfolio {
-	background-color: #232323;
+	background-color: black;
+	/*background-color: #232323;*/
 /*	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/portfolio-bg.jpg");*/
 	margin: 0 0 0;
 }
@@ -394,8 +400,8 @@ nav a:focus {
 
 .port-item img {
 	display: inline-block;
-	padding: 1em 2em;
-
+	padding: 0 2em;
+	padding-bottom: 4em;
 	opacity: 0.6;
 	transition: .5s ease;
 	backface-visibility: hidden;
@@ -498,7 +504,8 @@ nav a:focus {
 =================== */
 
 footer {
-	background: #232323;
+	/*background: #232323;*/
+	background-color: black;
 	color: #fff;
 	text-align: left;
 	padding-bottom: 5em;
@@ -605,7 +612,7 @@ input[type=submit]:hover {
 {
 	.container2{
 		min-width: 28em;
-		margin: -27.5% 6em;
+		margin: -27% 6em;
 		float: right;
 	}
 }
