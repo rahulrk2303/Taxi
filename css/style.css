@@ -268,7 +268,7 @@ nav a:focus {
 @media (min-width: 60rem) {
 	.home-hero {
 		height: 100vh;
-		padding-top: 35vh;
+		padding-top: 30vh;
 	}
 }
 
@@ -383,6 +383,14 @@ nav a:focus {
 .port-item img {
 	display: inline-block;
 	padding-bottom: 2em;
+	opacity: 0.6;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	border-radius: 1em;
+}
+
+.port-item img:hover {
+	opacity: 1;
 }
 
 /*.port-desc {
@@ -440,6 +448,7 @@ nav a:focus {
 .support {
 	float: center;
 	padding: 2em 0;
+	line-height: 4em;
 
 }
 
@@ -465,7 +474,7 @@ nav a:focus {
 
 @media (min-width: 60rem) {
 	.support a {
-		padding: 0 5em;
+		padding: 0 4em;
 	}
 	
 }
@@ -493,4 +502,72 @@ footer li {
 
 footer i {
 	padding: 0.5em .4em;
+}
+
+/*login signup*/
+
+
+.container2 {
+  position: relative;
+  float: right;
+  margin: -28em 6em;
+  padding: 2em;
+  width: 30%;
+  border: 0.25em solid #00ff6c;
+  border-radius: 1.5em;
+  background-color: rgba(23,23,23,0.7)
+}
+
+input[type=text], input[type=email], input[type=password] {
+  margin: 10px 20px 0px 10px;
+  width: 90%;
+  padding: 12px;
+  border: 1px solid #black;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.bottomLogin{
+  margin: 2% 25% 0% 25%;
+}
+
+.labelText{
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+label {
+  margin: 10px 20px 0px 10px;
+  padding: 12px 12px 12px 0;
+  display: block;
+}
+
+.wrapper{
+  display: flex;
+  /*display: inline-block;*/
+  /*float: left;*/
+}
+
+button {
+  display: inline-block;
+  margin: 0 0.5em;
+  background-color: rgba(0,0,0,0.5);
+  /*padding: 2em;*/
+  cursor: pointer;
+  width: 50%;
+}
+
+
+
+button:hover {
+  opacity: 0.8;
+}
+
+input[type=submit]:hover {
+  margin: 20px;
+  background-color: lightgreen;
+}
+
+.hide {
+  display: none;
 }
