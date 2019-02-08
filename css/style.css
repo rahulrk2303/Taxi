@@ -8,6 +8,8 @@ body {
 	margin: 0;
 	font-family: 'Raleway', sans-serif;
 	text-align: center;
+	background-color: #232323;
+	color: white;
 }
 
 img {
@@ -198,14 +200,14 @@ header {
 	left: 0;
 	right: 0;
 /*	margin: 1em;*/
-	padding: 1em 2em;
+	padding: .5em 2em;
 	top: 0;
-	background-color: black;
+	background-color: rgba(0,0,0,0.9);
 	z-index: 9;
 }
 
 .logo {
-  width: 150px;
+  width: 130px;
   height: auto;
   margin: 0.5em;
 /*  float: left;
@@ -225,10 +227,10 @@ nav li {
 }
 
 nav a {
-	font-weight: 900;
+	font-weight: 400;
 	text-decoration: none;
 	text-transform: uppercase;
-	font-size: 1rem;
+	font-size: .85rem;
 	padding: .5em;
 	color: white;
 }
@@ -243,7 +245,7 @@ nav a:focus {
 		float: left;
 	}
 
-	nav {
+	nav .home{
 		float: right;
 	}
 }
@@ -253,21 +255,18 @@ nav a:focus {
 		float: center;
 	}
 
-	nav {
+	nav .home{
 		float: center;
 	}
-
 }
-
-
 
 /*home-hero*/
 
 .home-hero {
-	background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/taxi.jpg");
+	background-image: linear-gradient(rgba(0,0,0,0.65),rgba(0,0,0,0.65)), url("../img/taxi.jpg");
 	background-size: cover;
 	background-position: center;
-	padding: 10em 0;
+	padding: 15em 0;
 	color: #FFF;
 	/*text-align: left;*/
 	padding-left: 2em;
@@ -278,7 +277,7 @@ nav a:focus {
 @media (min-width: 60rem) {
 	.home-hero {
 		height: 100vh;
-		padding-top: 30vh;
+		padding-top: 25vh;
 		text-align: left
 	}
 	.home-hero h1 {
@@ -538,8 +537,8 @@ footer i {
   margin-right: 15vw;*/
   padding: 2em;
   width: 30%;
-  border: 0.1em solid #00ff6c;
-  border-radius: 1.5em;
+  border: 0.05em solid #00ff6c;
+  /*border-radius: 1em;*/
   background-color: rgba(23,23,23,0.8);
   min-width: 28em;
 
@@ -612,7 +611,193 @@ input[type=submit]:hover {
 {
 	.container2{
 		min-width: 28em;
-		margin: -27% 6em;
+		margin: -25% 6em;
 		float: right;
 	}
+}
+
+/*PROFILE*/
+
+@media (min-width: 60em)
+{
+	nav .navleft {
+		float: left;
+		padding-left: 2em;
+	}
+	nav .navright {
+		float: right;
+	}
+}
+
+.vertical-menu {
+  width: 15em;
+  margin: 7em 4em;
+}
+
+.vertical-menu a {
+  background-color: #000; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 1em 2em; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  text-align: left;
+  margin-bottom: .3em;
+
+}
+
+.vertical-menu a:hover {
+  /*background-color: #00ff6c; */
+  color: #00ff6c;
+
+}
+
+.vertical-menu a.active {
+  /*background-color: #00ff6c; */
+  color: #00ff6c;
+
+}
+
+.container3 {
+  position: relative;
+  float: center;
+  /*margin: -20em 6em;*/
+  margin-top: 10em;
+  margin-left: 10vw;
+/*  margin-left: 15vw;
+  margin-right: 15vw;*/
+  padding: 1em 2em;
+  width: 30%;
+
+  /*border-radius: 1em;*/
+  /*background-color: rgba(23,23,23,0.8);*/
+  min-width: 28em;
+
+}
+
+.my-profile-icon {
+	width: 70px;
+	height: auto;
+
+	margin-left: 2em;	
+}
+
+.prof-title {
+	margin-top: -3em;
+	margin-left: 5em;
+	font-size: 2em;
+}
+
+.prof-title span{
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.container3 input[type=text], input[type=email], select {
+  margin: 8px 16px 0px 8px;
+  padding: 0.8em;
+  border: 1px solid #00ff6c;
+  border-radius: 4px;
+  resize: vertical;
+  width: 95%;
+}
+
+
+.container3 p {
+	margin: 0.5em 0.5em;
+
+	color: #00ff6c;
+}
+
+.bottomLogin{
+  margin: 2% 25% 0% 25%;
+}
+
+.labelText{
+  margin-top: 3%;
+  margin-left: 2%;
+}
+
+
+label {
+  margin: 10px 20px 0px 10px;
+  padding: 12px 12px 12px 0;
+  display: block;
+}
+
+
+.wrapper{
+  display: flex;
+  /*display: inline-block;*/
+  /*float: left;*/
+}
+
+button {
+  display: inline-block;
+  margin: 0 0.5em;
+  background-color: rgba(0,0,0,0.5);
+  /*padding: 2em;*/
+  cursor: pointer;
+  width: 50%;
+}
+
+
+
+/*button:hover {
+  opacity: 0.8;
+}*/
+
+input[type=submit]:hover {
+  margin: 20px;
+  background-color: lightgreen;
+}
+
+.hide {
+  display: none;
+}
+
+.container3 h2{
+	font-size: 2em;
+	padding-top: 0.8em;	
+}
+
+.container3 span {
+	font-size: 1.2rem;
+}
+
+
+@media (min-width:25em)
+{
+	.container3{
+		min-width: 28em;
+		float: right;
+		margin: 2em 5rem;
+		/*border: 1px solid green;*/
+	}
+}
+
+@media (min-width:60em)
+{
+	.container3{
+		width: 30%;
+		min-width: 28em;
+		margin: -23em 25em;
+		float: left;
+		text-align: left;
+	}
+}
+
+
+
+.my-profile-img {
+	width: 25%;
+	height: auto;
+	float: right;
+	margin: -18em 10em;
+	opacity: 0.8;
+	transition: 0.5;
+	border-radius: .5em;
+}
+
+.my-profile-img:hover {
+	opacity: 1;
 }

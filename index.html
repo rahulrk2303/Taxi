@@ -12,9 +12,9 @@
 
 <body onload="viewlogin()" id="home">
 	<header>
-		<img src="img/logouber2.png" alt="Taxi logo" class="logo">
+		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
 		<nav>	
-			<ul>
+			<ul class="home">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#gallery">Gallery</a></li>
@@ -38,7 +38,7 @@
         		<form  id="login">
             		<div class="login">
                 	<label class="labelText" for="uname"><b>Mobile Number</b></label>
-               	 	<input id="loginUsername" type="text" placeholder="999 999 999" name="uname" required>
+               	 	<input id="loginUsername" type="text" placeholder="Enter Mobile Number" name="uname" required>
                 	<label class="labelText" for="psw"><b>Password</b></label>
                 	<input id="loginPassword" type="password" placeholder="Enter Password" name="psw" required>
                 	<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
@@ -48,11 +48,11 @@
 	        	<form action="" id="signup">
 	            	<div class="signup">
 	            		<label for="uname"><b>Name</b></label>
-	                	<input type="text" id="registerUsername" name="uname" placeholder="John Smith" required>
+	                	<input type="text" id="registerUsername" name="uname" placeholder="Enter your name" required>
 	                	<label for="uname"><b>Mobile number</b></label>
-	                	<input type="text" id="registerUsername" name="number" placeholder="999 999 999" required>
+	                	<input type="text" id="registerUsername" name="number" placeholder="Enter Mobile Number" required>
 	                	<label for="email"><b>Email ID</b></label>
-	                	<input type="email" id="registerEmail" name="email" placeholder="Enter email id" required>
+	                	<input type="email" id="registerEmail" name="email" placeholder="Enter Email ID" required>
 		                <label for="psw"><b>Choose Password</b></label>
 		                <input type="password" id="registerPassword" placeholder="Enter Password" name="psw" required> <br> <br>
 		                <button onclick="validateRegister()" class="bottomLogin button button-accent" type="submit" id="register">REGISTER</button>
@@ -60,9 +60,6 @@
 	           	 	</div>
 	        	</form>
 	    	</div>
-		
-
-
 	</section>
 	
 	<div id="about" class="container">
