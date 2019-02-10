@@ -7,6 +7,7 @@
 	<title>Uber</title>
 	<link  href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/logSign.css"> -->
 </head>
 
@@ -27,7 +28,7 @@
 	<section class="home-hero">
 		<div class="container" class="main">
 			<h1 class="title"> Travel the way you want !  <span>Book your ride. </span></h1>
-			<a href="" class="button button-accent" id="booknow">Book Now</a>
+			<a href="rider_profile.html" class="button button-accent" id="booknow">Book Now</a>
 		</div>
 		
 			<div class="container2">
@@ -37,10 +38,17 @@
         		</div>
         		<form  id="login">
             		<div class="login">
-                	<label class="labelText" for="uname"><b>Mobile Number</b></label>
-               	 	<input id="loginUsername" type="text" placeholder="Enter Mobile Number" name="uname" required>
+                	<label class="labelText" for="num"><b>Mobile Number</b></label>
+               	 	<input id="num" type="text" placeholder="Enter Mobile Number" name="uname" required>
                 	<label class="labelText" for="psw"><b>Password</b></label>
-                	<input id="loginPassword" type="password" placeholder="Enter Password" name="psw" required>
+                	<input id="psw" type="password" placeholder="Enter Password" name="psw" required><br><br>
+
+                	<!-- <input type="radio" name="rord" value="rider">Rider  <input type="radio" name="rord" value="driver"> Driver  <input type="radio" name="rord" value="admin"> Admin --> 
+		        	<!-- <p><b>Login as</b> <select id="ridedriveadmin">
+		        		<option>Rider</option>
+		        		<option>Driver</option>
+		        		<option>Admin</option>
+		        	</select></p> -->
                 	<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
                 	<button onclick="validateLogin()" class="bottomLogin button button-accent" type="submit" id="login">LOGIN</button>
 	            	</div>
@@ -49,12 +57,20 @@
 	            	<div class="signup">
 	            		<label for="uname"><b>Name</b></label>
 	                	<input type="text" id="registerUsername" name="uname" placeholder="Enter your name" required>
-	                	<label for="uname"><b>Mobile number</b></label>
-	                	<input type="text" id="registerUsername" name="number" placeholder="Enter Mobile Number" required>
+	                	<label for="num"><b>Mobile number</b></label>
+	                	<input type="text" id="num" name="number" placeholder="Enter Mobile Number" required>
 	                	<label for="email"><b>Email ID</b></label>
 	                	<input type="email" id="registerEmail" name="email" placeholder="Enter Email ID" required>
 		                <label for="psw"><b>Choose Password</b></label>
-		                <input type="password" id="registerPassword" placeholder="Enter Password" name="psw" required> <br> <br>
+		                <input type="password" id="registerPassword" placeholder="Enter Password" name="psw" required> 
+		                <label class="labelText" for="psw"><b>Password</b></label>
+                		<input id="loginPassword" type="password" placeholder="Re-nter Password" name="psw" required><br> <br>
+		                <!-- <input type="radio" name="rord" value="rider">Rider  <input type="radio" name="rord" value="driver"> Driver  <input type="radio" name="rord" value="admin"> Admin <br><br> -->
+		               	<p><b>Sign up as</b> <select id="ridedriveadmin">
+		        			<option>Rider</option>
+		        			<option>Driver</option>
+		        			<option>Admin</option>
+		        		</select></p>
 		                <button onclick="validateRegister()" class="bottomLogin button button-accent" type="submit" id="register">REGISTER</button>
 
 	           	 	</div>

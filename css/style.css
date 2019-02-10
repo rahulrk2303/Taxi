@@ -10,6 +10,7 @@ body {
 	text-align: center;
 	background-color: #232323;
 	color: white;
+	overflow-x: hidden;
 }
 
 img {
@@ -151,10 +152,11 @@ p:last-of-type {
 	display: inline-block;
 	font-size: 1.5rem;
 	text-decoration: none;
-	text-transform: uppercase;
+	/*text-transform: uppercase;*/
 	border-width: 2px;
 	border-style: ridge;
 	padding: .5em 1.75em;
+	font-family: raleway;
 }
 
 .button-accent {
@@ -276,7 +278,7 @@ nav a:focus {
 
 @media (min-width: 60rem) {
 	.home-hero {
-		height: 100vh;
+		height: 114vh;
 		padding-top: 25vh;
 		text-align: left
 	}
@@ -351,7 +353,7 @@ nav a:focus {
 		/*left: -5em;*/
 		/*margin: -2.5em;*/
 		margin: 0 -2.65%;
-
+		padding: 8vh 0;
 
 	}
 
@@ -383,11 +385,13 @@ nav a:focus {
 	background-color: black;
 	/*background-color: #232323;*/
 /*	background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url("../img/portfolio-bg.jpg");*/
-	margin: 0 0 0;
+	margin: 0 0;
+/*	padding: 1.5em 5%;*/
+	/*float: right;*/
 }
 
 .portfolio h1{
-	padding-top: 1em;
+	padding-top: 1.5em;
 	color: #00ff6c;
 
 }
@@ -395,16 +399,21 @@ nav a:focus {
 .port-item {
 	margin: 0;
 	position: relative;
+
 }
 
 .port-item img {
+
 	display: inline-block;
-	padding: 0 2em;
-	padding-bottom: 4em;
+	/*padding: 0 ;*/
+	/*justify-content: center;*/
+	padding: 2em;
 	opacity: 0.6;
 	transition: .5s ease;
 	backface-visibility: hidden;
-	border-radius: 1em;
+	/*border-radius: 1em;*/
+	max-width: 100%;
+	height: auto;
 }
 
 .port-item img:hover {
@@ -428,7 +437,8 @@ nav a:focus {
 */
 @media (min-width: 37rem) {
 	.port-item {
-		width: 50%;
+		max-width: 50%;
+		height: auto;
 		float: left;
 /*		padding-left: 1em;
 */	}
@@ -436,8 +446,10 @@ nav a:focus {
 
 @media (min-width: 60rem) {
 	.port-item {
-		width: 33.3333334%;
+		max-width: 33.3333334%;
+		height: auto;
 		overflow: hidden;
+		padding-left: 4em;
 	}
 
 	/*.port-desc {
@@ -507,7 +519,7 @@ footer {
 	background-color: black;
 	color: #fff;
 	text-align: left;
-	padding-bottom: 5em;
+	padding: 5em;
 	padding-left: 10%;
 }
 
@@ -531,8 +543,9 @@ footer i {
   position: relative;
   float: center;
   /*margin: -20em 6em;*/
-  margin-top: 5em;
-  margin-left: 10vw;
+  margin: 5em 10vw;
+  /*margin-top: 5em;*/
+  /*margin-left: 10vw;*/
 /*  margin-left: 15vw;
   margin-right: 15vw;*/
   padding: 2em;
@@ -541,16 +554,34 @@ footer i {
   /*border-radius: 1em;*/
   background-color: rgba(23,23,23,0.8);
   min-width: 28em;
-
+  line-height: 1em;
 }
 
-input[type=text], input[type=email], input[type=password] {
-  margin: 10px 20px 0px 10px;
+.wrapper button {
+
+	font-size: 1.2rem;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=select], input[type=submit] {
+  margin: 8px 16px 0px 8px;
   width: 90%;
   padding: 12px;
-  border: 2px solid #00ff6c;
+  border: 1px solid #00ff6c;
   border-radius: 4px;
   resize: vertical;
+}
+
+.container2 input[type=email] {
+	width: 90%;
+}
+
+.container2 select {
+	width: 50%;
+}
+
+.container2 p {
+	padding-left: 1em;
+	padding-bottom: .5em;
 }
 
 .bottomLogin{
@@ -629,39 +660,13 @@ input[type=submit]:hover {
 	}
 }
 
-.vertical-menu {
-  width: 15em;
-  margin: 7em 4em;
-}
 
-.vertical-menu a {
-  background-color: #000; /* Grey background color */
-  color: white; /* Black text color */
-  display: block; /* Make the links appear below each other */
-  padding: 1em 2em; /* Add some padding */
-  text-decoration: none; /* Remove underline from links */
-  text-align: left;
-  margin-bottom: .3em;
-
-}
-
-.vertical-menu a:hover {
-  /*background-color: #00ff6c; */
-  color: #00ff6c;
-
-}
-
-.vertical-menu a.active {
-  /*background-color: #00ff6c; */
-  color: #00ff6c;
-
-}
 
 .container3 {
   position: relative;
   float: center;
   /*margin: -20em 6em;*/
-  margin-top: 10em;
+  margin-top: 20em;
   margin-left: 10vw;
 /*  margin-left: 15vw;
   margin-right: 15vw;*/
@@ -677,7 +682,7 @@ input[type=submit]:hover {
 .my-profile-icon {
 	width: 70px;
 	height: auto;
-
+	margin-top: 1em;
 	margin-left: 2em;	
 }
 
@@ -692,7 +697,7 @@ input[type=submit]:hover {
 	font-weight: 400;
 }
 
-.container3 input[type=text], input[type=email], select {
+.container3 input[type=text], input[type=email], select, input[type=date], input[type=time], input[type=number], textarea {
   margin: 8px 16px 0px 8px;
   padding: 0.8em;
   border: 1px solid #00ff6c;
@@ -701,16 +706,48 @@ input[type=submit]:hover {
   width: 95%;
 }
 
+#bookride select, input[type=date], input[type=time], input[type=number]{
+/*  margin: 8px 16px 0px 8px;
+  padding: 0.8em;
+  border: 1px solid #00ff6c;
+  border-radius: 4px;
+  resize: vertical;*/
+  width: 35%;
+}
+
+#bookride input[type=text] {
+	width: 80%;
+}
+
+#bookride p {
+	color: white;
+}
+
+#bookride h1 {
+	padding-left: 0.2em;
+	text-align: left;
+	color: #00ff6c;
+	margin-bottom: 0;
+	margin-top: 0.4em;
+}
+
+/*#bookride {
+	padding-left: 2em;
+}*/
 
 .container3 p {
-	margin: 0.5em 0.5em;
+/*	margin: 0.2em 0.6em;
+*/	color: #00ff6c;
+	font-size: .8rem;
+}
 
+.container3 a {
+	text-decoration: none; 
 	color: #00ff6c;
+	margin: 0.2em 0.6em;
+
 }
 
-.bottomLogin{
-  margin: 2% 25% 0% 25%;
-}
 
 .labelText{
   margin-top: 3%;
@@ -731,15 +768,6 @@ label {
   /*float: left;*/
 }
 
-button {
-  display: inline-block;
-  margin: 0 0.5em;
-  background-color: rgba(0,0,0,0.5);
-  /*padding: 2em;*/
-  cursor: pointer;
-  width: 50%;
-}
-
 
 
 /*button:hover {
@@ -755,7 +783,7 @@ input[type=submit]:hover {
   display: none;
 }
 
-.container3 h2{
+#riderprofile h2{
 	font-size: 2em;
 	padding-top: 0.8em;	
 }
@@ -789,15 +817,173 @@ input[type=submit]:hover {
 
 
 .my-profile-img {
-	width: 25%;
+	width: 90%;
 	height: auto;
-	float: right;
-	margin: -18em 10em;
+	float: left;
+	margin: -32em 35em;
 	opacity: 0.8;
-	transition: 0.5;
+	transition: 0.5 ease;
 	border-radius: .5em;
 }
 
 .my-profile-img:hover {
 	opacity: 1;
+}
+
+/*@media screen and (max-width: 500px) {   
+	nav li {     display: block;     border-bottom: 1px #D25458 solid;   }   
+	nav li:last-child {     border-bottom: none;    } } 
+
+*/
+
+
+.logout {
+	margin-top: 1em;
+	margin-left: .5em;
+	width: 100%
+}
+
+.container3 button {
+	margin-left: 0.3em;
+}
+
+.vertical-menu {
+  width: 15em;
+  margin: 6em 4em;
+}
+
+
+.vertical-menu button {
+	font-size: 1em;
+	color: white;
+	width: 100%;
+	padding: 1em 1.5em;
+	font-weight: 300;
+	border: 0;
+	margin-top: 0.2em;
+}
+
+.vertical-menu button:hover {
+	color: black;
+	background-color: #00ff6c;
+}
+
+.vertical-menu button:focus {
+	background-color: #00ff6c;
+	color: black;
+	border: 0;
+}
+
+.vertical-menu a {
+  background-color: #000; /* Grey background color */
+  color: white; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 1em 2em; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+  text-align: center;
+  margin-bottom: .3em;
+
+}
+
+.vertical-menu a:hover {
+  /*background-color: #00ff6c; */
+  color: #00ff6c;
+
+}
+/*
+.vertical-menu a.active {
+  color: #00ff6c;
+
+}*/
+
+#booknow {
+	background-color: rgba(0,0,0,0.5)
+}
+
+#booknow:hover {
+	background-color: #00ff6c;
+	color: black;
+}
+
+
+.column {
+	background-color: black;
+	/*padding: 0 2em 0.5em 2em;*/
+	margin: 1em;
+	width: 150%;
+	border: 0;
+}
+
+.checked {
+  color: orange;
+}
+
+.update, .cancel {
+	margin-left: 0;
+	width: 30%;
+	padding: .25em;
+	color: white;
+	font-size: 1rem;
+	/*margin-bottom: .8em;*/
+}
+
+.column {
+	padding: 0;
+}
+
+.collapsible {
+	display: block;
+	margin: 0;
+	width: 99%;
+	padding: 0 3.3em;
+	/*padding-bottom: 0;*/
+	border: 0;
+	color: white;
+	text-align: left;
+	font-family: raleway;
+}
+
+.column #datetime {
+	font-size: 1.5rem;
+	font-weight: 400;
+}
+
+.column #place {
+	font-size: 1rem;
+	font-weight: 300;
+	float: right;
+	margin-top: -5.5em;
+}
+
+.column #cash {
+	font-size: 1rem;
+	font-weight: 300;
+	float: right;
+	margin-top: -3.5em;
+}
+
+.column #with {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.active, .collapsible:hover {
+  background-color: #00ff6c;
+  /*border-color: #00ff6c;*/
+  color: black;
+}
+
+.content {
+  /*padding: 0 18px;*/
+  /*display: none;*/
+  overflow: hidden;
+  padding: 0 3em;
+  /*background-color: pink;*/
+  /*background-color: #f1f1f1;*/
+}
+
+#bookride iframe {
+	position: absolute;
+	margin-top: -30em;
+	margin-left: 8em;
 }
