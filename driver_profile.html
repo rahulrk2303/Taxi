@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Rider Profile</title>
+	<title>Driver Profile</title>
 	<link  href="css/style.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<!-- <link rel="stylesheet" type="text/css" href="css/logSign.css"> -->
 </head>
 
-<body onload="riderviewbook()" id="rider">
+<body onload="driverviewlicense()" id="rider">
 
 	<header>
 		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
@@ -26,37 +26,46 @@
 		</nav>
 	</header>
 	<div class="vertical-menu">
-  		<button class="button button-dark" type="submit" onclick="riderviewbook()">Book a ride</button>
-  		<button class="button button-dark" type="submit" onclick="riderviewprofile()">Profile</button>
-  		<button class="button button-dark" type="submit" onclick="riderviewtrips()">My Trips</button>
+  		<button class="button button-dark" type="submit" onclick="driverviewlicense()">License Details</button>
+  		<button class="button button-dark" type="submit" onclick="driverviewprofile()">Profile</button>
+  		<button class="button button-dark" type="submit" onclick="driverviewtrips()">My Trips</button>
 
         <a class="logout" href="index.html">Logout</a>
 <!-- 		<button class="button button-dark" type="submit">Logout</button>
  -->	</div> 
- 	<div class="container3 rider">
+ 	<div class="container3 driver">
 
-        <form id="bookride">
-            <h1>Book your Ride</h1>
-            <label>Start Date </label> <input id="date" type="date" value="date"><br>
-            <!-- <label for="time">Start Time </label> -->
-            <label> Start Time </label><input id="time" type="time" value="time"><br>
-            <label for="Source">Source</label>
-            <input id="source" type="text"  placeholder="Enter Source"><br>
-            <label for="dest">Destination</label>
-            <input id="dest" type="text"  placeholder="Enter Destination"><br>
-            <label>Seats </label><select id="seats">
-                <option>3</option>
-                <option>4</option>
-                <option>5</option>
-            </select>
+        <form id="driverlicense">
+            <h1>Add License Details</h1>
+            <label for="licno">License Number</label>
+            <input id="licno" type="text" placeholder="Enter License Number"><br><br>
+            <label for="uplic">Upload License</label>
+            <input id="uplic" type="file">
+            <!-- <input type="submit" value="submit"> -->
             <br><br>
-            <button class="bottomLogin button button-accent" type="submit" id="login">Search</button>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d15547.68989918154!2d80.2265543!3d13.04060655!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sua!4v1549776191455" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            
+            <button class="lic-submit button button-accent" type="submit" id="login">Submit</button>
+
+            <h1>Completed a Ride ? </h1>
+            <label for="bkid">Booking ID</label>
+            <input id="bkid" type="text" placeholder="Enter Booking Number"><br><br>
+            <label for="pin">Pincode</label>
+            <input id="pin" type="text" placeholder="Enter Pincode">
+            <!-- <input type="submit" value="submit"> -->
+            <br><br>
+            
+            <button class="ride-com button button-accent" type="submit" id="login">Ride Completed</button>
+            
         </form>
 
-        <form id="riderprofile">
+        <form id="driverprofile">
         	<img class="my-profile-icon" src="img/4.png">
-        	<h2 class="prof-title">User Name <span>123456789</span> </h2>
+        	<h2 class="prof-title">Driver Name <span>123456789</span> 
+                <br><span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star"></span></h2>
             <label for="email">Email ID</label>
             <input id="email" type="email" placeholder="Username123@gmail.com" name="email" readonly="readonly">
             <p><a href="#">Add another email</a></p>
@@ -87,8 +96,6 @@
             <input id="invite-code" type="text" placeholder="Username123" name="inv-code" readonly="readonly"> -->
             <label for="address">Address</label>
             <textarea id="address" placeholder="123, Bank Street, Chennai, India" readonly="readonly"></textarea>
-            <label for="zipcode">Zip Code</label>
-            <input type="text" id="zipcode" pattern="[0-9]{6}">
             <br><br>
             <a href="#">Change Password</a>
             <br> <br>
@@ -96,7 +103,7 @@
             <img class= "my-profile-img" src="img/ride_1.jpg">
         </form>  
         
-        <form id="ridertrips">
+        <form id="drivertrips">
                 <div class="row">
                     
                     <div class="column">
@@ -180,5 +187,3 @@
 
     <script src="js/logSign.js"></script>
 </html>
-
-

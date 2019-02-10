@@ -46,3 +46,29 @@ function riderviewtrips() {
 	// d.style.display = "none";
 }
 
+function driverviewlicense() {
+	var a = document.getElementById("driverlicense");
+	var b = document.getElementById("driverprofile");
+	var c = document.getElementById("drivertrips");
+	a.style.display = "block";
+	b.style.display = "none";
+	c.style.display = "none";
+}
+
+function driverviewprofile() {
+	var a = document.getElementById("driverlicense");
+	var b = document.getElementById("driverprofile");
+	var c = document.getElementById("drivertrips");
+	a.style.display = "none";
+	b.style.display = "block";
+	c.style.display = "none";
+}
+
+function driverviewtrips() {
+	var a = document.getElementById("driverlicense");
+	var b = document.getElementById("driverprofile");
+	var c = document.getElementById("drivertrips");
+	a.style.display = "none";
+	b.style.display = "none";
+	c.style.display = "block";
+}

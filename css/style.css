@@ -562,13 +562,36 @@ footer i {
 	font-size: 1.2rem;
 }
 
-input[type=text], input[type=email], input[type=password], input[type=select], input[type=submit] {
+input[type=text], input[type=email], input[type=password], input[type=select], input[type=submit], input[type=file] {
   margin: 8px 16px 0px 8px;
   width: 90%;
   padding: 12px;
   border: 1px solid #00ff6c;
   border-radius: 4px;
   resize: vertical;
+}
+
+input[type=file] {
+	border: 0;
+	padding-left: .2em;
+}
+
+#driverlicense h1 {
+	margin-top: 1em;
+	color: #00ff6c;
+}
+
+#driverprofile .my-profile-icon {
+	margin-top: 3.5em;
+}
+
+#driverprofile h2 {
+	margin-top: -3em;
+}
+
+
+#driverlicense .ride-com {
+	width: 70%;
 }
 
 .container2 input[type=email] {
