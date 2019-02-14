@@ -26,96 +26,112 @@
 		</nav>
 	</header>
 	<div class="vertical-menu">
-  		<button class="button button-dark" type="submit" onclick="riderviewbook()">Book a ride</button>
-  		<button class="button button-dark" type="submit" onclick="riderviewprofile()">Profile</button>
+  		<button class="button button-dark" type="button" onclick="window.open('rider_profile.html', '_self');">Book a ride</button>
+  		<button class="button button-dark" type="button" onclick="window.open('rider_profile.html', '_self');">Profile</button>
   		<!-- <button class="button button-dark" type="submit" onclick="riderviewtrips()">My Trips</button> -->
-        <button class="button button-dark" onclick=" window.open('mytrips_rider.html', '_blank'); return false;">My Trips</button>
+        <button class="button button-dark">My Trips</button>
 
         <a class="logout" href="index.html">Logout</a>
 <!-- 		<button class="button button-dark" type="submit">Logout</button>
  --></div> 
  	<div class="container3 rider">
- 			<form class="filter-ridertrips">
- 				<select>
- 					<option>FILTER</option>
- 					<option>Recents</option>
- 					<option>Highest rated</option>
- 					<option>Lowest rated</option>
- 				</select>
- 			</form>
+ 			<div class="filter-ridertrips">
+                <label>Filter by : </label>
+<!--                 <button class="button button-accent all" type="submit" onclick="all()">All</button> -->
+                <button class="button button-accent upcoming" type="submit" onclick="upcoming()">Upcoming</button>
+                <button class="button button-accent completed" type="submit" onclick="completed()">Completed</button>
+                <button class="button button-accent cancelled" type="submit" onclick="cancelled()">Cancelled</button>
+ 			</div>
+
  			<div id="ridertrips">
                 <div class="row">
                     
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
+                    <div class="column" id="upcoming">
+                        <button class="collapsible"><h2 id="datetime">15 February 2019, 7.40pm</h2>
+                        <h2 id="rs">Rs. 250 Fares might change</h2>
                         <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
+                        <h4 id="cash">Wallet</h4></button>
                         <div class="content">
                             <h3 id="with">Your trip with John</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
                             <button class="button button-accent update">Update</button>
                             <button class="button button-accent cancel">Cancel</button>
                             <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+                            <!-- <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span> </h4> -->
+
+                            <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
+
                         </div>
                     </div>  
+                    <div id="completed">
                     <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
+                        <button class="collapsible"><h2 id="datetime">13 February 2019, 6.02pm</h2>
+                        <h2 id="rs">Rs.300</h2>
                         <h4 id="place">Chennai</h4>
                         <h4 id="cash">Cash</h4></button>
                         <div class="content">
-                            <h3 id="with">Your trip with John</h3>
+                            <h3 id="with">Your trip with Mike</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
                             <button class="button button-accent update">Update</button>
                             <button class="button button-accent cancel">Cancel</button>
                             <h4>Rate    
+                            <!-- <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
+                            <span class="fa fa-star checked"></span> </h4> -->
+                                                        <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
                         </div>
                     </div>  
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
+                    <div class="column" id="completed">
+                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.15pm</h2>
+                        <h2 id="rs">Rs.150</h2>
                         <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
+                        <h4 id="cash">Wallet</h4></button>
                         <div class="content">
-                            <h3 id="with">Your trip with John</h3>
+                            <h3 id="with">Your trip with Will</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
                             <button class="button button-accent update">Update</button>
                             <button class="button button-accent cancel">Cancel</button>
                             <h4>Rate    
+                           <!--  <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
                             <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
+                            <span class="fa fa-star"></span> </h4> -->
+                                                        <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
                         </div>
                     </div>     
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
+                </div>
+                    <div class="column" id="cancelled">
+                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.00pm</h2>
+                        <h2 id="rs">NIL</h2>
                         <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
+                        <h4 id="cash">-</h4></button>
                         <div class="content">
                             <h3 id="with">Your trip with John</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
                             <button class="button button-accent update">Update</button>
                             <button class="button button-accent cancel">Cancel</button>
                             <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
+<!--                             <span class="fa fa-star"></span>
                             <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span>
+                            <span class="fa fa-star"></span> </h4> -->
+                                                        <div class="slidecontainer">
+  <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+</div>
                         </div>
                     </div>  
                 </div>
