@@ -13,9 +13,9 @@
 
 <body onload="viewlogin()" id="home">
 	<header>
-		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
-		<nav>	
-			<ul class="home">
+		<a href="index.html"> <img src="img/logouber2.png" class="logo"></a>
+		<nav>
+			<ul class="navbar">
 				<li><a href="#home">Home</a></li>
 				<li><a href="#about">About</a></li>
 				<li><a href="#gallery">Gallery</a></li>
@@ -26,8 +26,8 @@
 	</header>
 	
 	<section class="home-hero">
-		<div class="container" class="main">
-			<h1 class="title"> Travel the way you want !  <span>Book your ride. </span></h1>
+		<div class="slogan">
+			<h1 class="title">Travel the way you want !<span>Book your ride. </span></h1>
 			<a href="rider_profile.html" class="button button-accent" id="booknow">Book Now</a>
 		</div>
 		
@@ -42,13 +42,6 @@
                	 	<input id="num" type="text" placeholder="Enter Mobile Number" name="uname" required>
                 	<label class="labelText" for="psw"><b>Password</b></label>
                 	<input id="psw" type="password" placeholder="Enter Password" name="psw" required><br><br>
-
-                	<!-- <input type="radio" name="rord" value="rider">Rider  <input type="radio" name="rord" value="driver"> Driver  <input type="radio" name="rord" value="admin"> Admin --> 
-		        	<!-- <p><b>Login as</b> <select id="ridedriveadmin">
-		        		<option>Rider</option>
-		        		<option>Driver</option>
-		        		<option>Admin</option>
-		        	</select></p> -->
                 	<label><input type="checkbox" checked="checked" name="remember"> Remember me</label>
                 	<button onclick="validateLogin()" class="bottomLogin button button-accent" type="submit" id="login">LOGIN</button>
 	            	</div>
@@ -65,7 +58,6 @@
 		                <input type="password" id="registerPassword" placeholder="Enter Password" name="psw" required> 
 		                <label class="labelText" for="psw"><b>Password</b></label>
                 		<input id="loginPassword" type="password" placeholder="Re-nter Password" name="psw" required><br> <br>
-		                <!-- <input type="radio" name="rord" value="rider">Rider  <input type="radio" name="rord" value="driver"> Driver  <input type="radio" name="rord" value="admin"> Admin <br><br> -->
 		               	<p><b>Sign up as</b> <select id="ridedriveadmin">
 		        			<option>Rider</option>
 		        			<option>Driver</option>
