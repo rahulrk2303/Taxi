@@ -32,8 +32,7 @@
         <button class="button button-dark">My Trips</button>
 
         <a class="logout" href="index.html">Logout</a>
-<!-- 		<button class="button button-dark" type="submit">Logout</button>
- --></div> 
+    </div> 
  	<div class="container3 rider">
  			<div class="filter-ridertrips">
                 <label>Filter by : </label>
@@ -54,8 +53,21 @@
                         <div class="content">
                             <h3 id="with">Your trip with John</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
+                            <button class="button button-accent update" onclick="window.location.href='#update-modal'">Update</button>
+                            <div id="update-modal" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">x</a>
+                                    <h2>Updated successfully.</h2>
+                                </div>
+                            </div>
+                            <button class="button button-accent cancel" onclick="window.location.href='#cancel-modal'">Cancel</button>
+                            <div id="cancel-modal" class="modalDialog">
+                                <div>
+                                    <a href="#close" title="Close" class="close">x</a>
+                                    <h2>Cancelled successfully.</h2>
+                                    <a href="rider_profile.html" style="color:#00ff6c">Book again?</a>
+                                </div>
+                            </div>
                             
                             <form id="user-rating-form">
                             <span class="user-rating">
@@ -83,8 +95,8 @@
                         <div class="content">
                             <h3 id="with">Your trip with Mike</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
+                            <button class="button button-accent update" onclick="window.location.href='#update-modal'">Update</button>
+                            <button class="button button-accent cancel" onclick="window.location.href='#cancel-modal'">Cancel</button>
                             <form id="user-rating-form">
                             <span class="user-rating">
                             <input type="radio" name="rating" value="5"><span class="star"></span>
@@ -108,8 +120,8 @@
                         <div class="content">
                             <h3 id="with">Your trip with Will</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
+                            <button class="button button-accent update" onclick="window.location.href='#update-modal'">Update</button>
+                            <button class="button button-accent cancel" onclick="window.location.href='#cancel-modal'">Cancel</button>
                             <form id="user-rating-form">
                             <span class="user-rating">
                             <input type="radio" name="rating" value="5"><span class="star"></span>
@@ -134,8 +146,8 @@
                         <div class="content">
                             <h3 id="with">Your trip with John</h3>
                             <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
+                            <button class="button button-accent update" onclick="window.location.href='#update-modal'">Update</button>
+                            <button class="button button-accent cancel" onclick="window.location.href='#cancel-modal'">Cancel</button>
                             <form id="user-rating-form">
                             <span class="user-rating">
                             <input type="radio" name="rating" value="5"><span class="star"></span>

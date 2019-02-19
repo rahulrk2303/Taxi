@@ -62,31 +62,6 @@
             <label for="email">Email ID</label>
             <input id="email" type="email" placeholder="Username123@gmail.com" name="email" readonly="readonly">
             <p><a href="#">Add another email</a></p>
-        	<!-- <label for="location">Location</label>
-        	<select id="location">
-        		<option>India</option>
-        		<option>United States of America</option>
-        		<option>United Kingdom</option>
-        		<option>Canada</option>
-        		<option>Australia</option>
-        		<option>Singapore</option>
-        		<option>China</option>
-        		<option>Japan</option>
-        		<option>Switzerland</option>
-        	</select> -->
-
-        	<!-- <label for="lang">Language</label>
-        	<select id="lang">
-        		<option>English</option>
-        		<option>Tamil</option>
-        		<option>Hindi</option>
-        		<option>Chinese</option>
-        		<option>Germany</option>
-        		<option>Japanese</option>
-        		<option>French</option>
-        	</select> -->
-        	<!-- <label for="invite-code">Invite Code</label>
-            <input id="invite-code" type="text" placeholder="Username123" name="inv-code" readonly="readonly"> -->
             <label for="address">Address</label>
             <textarea id="address" placeholder="123, Bank Street, Chennai, India" readonly="readonly"></textarea>
             <label for="zipcode">Zip Code</label>
@@ -94,87 +69,16 @@
             <br><br>
             <a href="#">Change Password</a>
             <br> <br>
-            <button class="bottomLogin button button-accent" type="submit" id="login">Save</button>
+            <button class="bottomLogin button button-accent" type="button" onclick="window.location.href='#save-modal'">Save</button>
+            <div id="save-modal" class="modalDialog">
+                <div>
+                    <a href="#close" title="Close" class="close">x</a>
+                    <h2>Saved successfully.</h2><br>
+                </div>
+            </div>
             <img class= "my-profile-img" src="img/ride_1.jpg">
         </form>  
         
-        <!-- <div id="ridertrips">
-                <div class="row">
-                    
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
-                        <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
-                        <div class="content">
-                            <h3 id="with">Your trip with John</h3>
-                            <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
-                            <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
-                        </div>
-                    </div>  
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
-                        <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
-                        <div class="content">
-                            <h3 id="with">Your trip with John</h3>
-                            <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
-                            <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
-                        </div>
-                    </div>  
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
-                        <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
-                        <div class="content">
-                            <h3 id="with">Your trip with John</h3>
-                            <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
-                            <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
-                        </div>
-                    </div>     
-                    <div class="column">
-                        <button class="collapsible"><h2 id="datetime">09 February 2019, 5.42pm</h2>
-                        <h2 id="rs">Rs.200</h2>
-                        <h4 id="place">Chennai</h4>
-                        <h4 id="cash">Cash</h4></button>
-                        <div class="content">
-                            <h3 id="with">Your trip with John</h3>
-                            <h3 id="fromto">From XYZ to ABC</h3>
-                            <button class="button button-accent update">Update</button>
-                            <button class="button button-accent cancel">Cancel</button>
-                            <h4>Rate    
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star checked"></span>
-                            <span class="fa fa-star"></span>
-                            <span class="fa fa-star"></span> </h4>
-                        </div>
-                    </div>  
-                </div>
-        </div> -->
 	</div>
 
 
