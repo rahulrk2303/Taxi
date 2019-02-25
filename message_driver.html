@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Driver Profile</title>
+	<link  href="css/driver.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/logSign.css"> -->
+</head>
+
+<body id="message_driver">
+
+	<header>
+		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
+		<nav>	
+			<ul class="home">
+				<li><a href="index.html#home">Home</a></li>
+				<li><a href="index.html#about">About</a></li>
+				<li><a href="index.html#gallery">Gallery</a></li>
+				<li><a href="index.html#support">Support</a></li>
+				<li><a href="index.html#contact">Contact</a></li>
+			</ul>
+		</nav>
+	</header>
+	
+	<div class="vertical-menu">
+<!--   		<button class="button button-dark" type="submit" onclick="driverviewlicense()">License Details</button> -->
+  		<button class="button button-dark" type="submit" onclick="drivercompleted()">Completed</button>
+  		<button class="button button-dark" type="submit" onclick="driverviewprofile()">Profile</button>
+  		<!-- <button class="button button-dark" type="submit" onclick="driverviewtrips()">My Trips</button> -->
+                <button class="button button-dark" onclick=" window.open('mytrips_driver.html', '_self'); return false;">My Trips</button>
+
+        <a class="logout" href="index.html">Logout</a>
+	</div> 
+ 	<div class="container3 driver">
+                <br>
+                <div class="row">
+                    <div class="column msgs">
+                        <button class="collapsible"><h2 id="msg1"><i class="fas fa-envelope"></i>   You don't have any current rides</h2>
+                        </button>
+                        
+                    </div>  
+                    
+                </div>
+        
+        
+	</div>
+
+</body>
+
+<script src="js/driver.js"></script>
+</html>

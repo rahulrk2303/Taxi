@@ -58,11 +58,33 @@
 		                <input type="password" id="registerPassword" placeholder="Enter Password" name="psw" required> 
 		                <label class="labelText" for="psw"><b>Password</b></label>
                 		<input id="loginPassword" type="password" placeholder="Re-nter Password" name="psw" required><br> <br>
-		               	<p><b>Sign up as</b> <select id="ridedriveadmin">
-		        			<option>Rider</option>
-		        			<option>Driver</option>
-		        			<option>Admin</option>
+		               	<p><b>Sign up as</b> <select id="ridedriveadmin"
+		               		onchange="riderdriver(this);">
+		        			<option value="rider">Rider</option>
+		        			<option value="driver">Driver</option>
+		        			<!-- <option>Admin</option> -->
 		        		</select></p>
+		        		<div class="driverlicense" id="driverlicense">
+			        		<form >
+					            <!-- <h1>Add License Details</h1> -->
+					            <label for="licno">License Number</label>
+					            <input id="licno" type="text" placeholder="Enter License Number"><br><br>
+					            <label for="file-upload" class="custom-file-upload">
+					    		<i class="fa fa-cloud-upload"></i> Upload
+								License</label>
+								<input id="file-upload" type="file"/>
+					            <br><br>
+					           
+					            <!-- <button class="lic-submit button button-accent" type="button" onclick="window.location.href='#submit-modal'">Submit</button>
+					            <div id="submit-modal" class="modalDialog">
+					                <div>
+					                    <a href="#close" title="Close" class="close">x</a>
+					                    <h2>License Submitted successfully.</h2>
+					                </div>
+					            </div> -->
+					        </form>
+				        </div>
+
 		                <button onclick="validateRegister()" class="bottomLogin button button-accent" type="submit" id="register">REGISTER</button>
 
 	           	 	</div>
