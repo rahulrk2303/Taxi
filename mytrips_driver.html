@@ -8,10 +8,10 @@
 	<link  href="css/driver.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/logSign.css"> -->
+
 </head>
 
-<body >
+<body onload="upcoming()">
 
 	<header>
 		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
@@ -26,10 +26,10 @@
 		</nav>
 	</header>
 	<div class="vertical-menu">
-<!--         <button class="button button-dark" type="button" onclick="window.open('driver_profile.html', '_self');">License Details</button> -->
+
         <button class="button button-dark" type="button"  onclick="window.open('driver_profile.html', '_self');">Completed</button>
         <button class="button button-dark" type="button" onclick="window.open('driver_profile.html', '_self');">Profile</button>
-        <!-- <button class="button button-dark" type="submit" onclick="driverviewtrips()">My Trips</button> -->
+
                 <button class="button button-dark">My Trips</button>
 
         <a class="logout" href="index.html">Logout</a>
@@ -37,7 +37,7 @@
  	<div class="container3 driver">
  			<div class="filter-drivertrips">
                 <label>Filter by : </label>
-<!--                 <button class="button button-accent all" type="submit" onclick="all()">All</button> -->
+
                 <button class="button button-accent upcoming" type="submit" onclick="upcoming()">Upcoming</button>
                 <button class="button button-accent completed" type="submit" onclick="completed()">Completed</button>
                 <button class="button button-accent cancelled" type="submit" onclick="cancelled()">Cancelled</button>
@@ -47,6 +47,7 @@
                 <div class="row">
                     
                     <div class="column" id="upcoming">
+                        <div class="upcoming-available">
                         <button class="collapsible"><h2 id="datetime">15 February 2019, 7.40pm</h2>
                         <h2 id="rs">Rs. 250 Fares might change</h2>
                         <h4 id="place">Chennai</h4>
@@ -83,12 +84,16 @@
                                 <input type="radio" name="rating" value="1"><span class="star"></span>
                             </span>
                             </form>
-
-
+                            </div>
+                        </div>
+                        <div class="upcoming-nil">
+                            <button class="collapsible"><h2 id="msg1"><i class="fas fa-envelope"></i>   You don't have any current rides</h2>
+                            </button>
                         </div>
                     </div>  
                     <div id="completed">
                     <div class="column">
+                        <div class="completed-available">
                         <button class="collapsible"><h2 id="datetime">13 February 2019, 6.02pm</h2>
                         <h2 id="rs">Rs.300</h2>
                         <h4 id="place">Chennai</h4>
@@ -112,8 +117,10 @@
                             </span>
                             </form>
                         </div>
+                    </div>
                     </div>  
                     <div class="column" id="completed">
+                        <div class="completed-available">
                         <button class="collapsible"><h2 id="datetime">09 February 2019, 5.15pm</h2>
                         <h2 id="rs">Rs.150</h2>
                         <h4 id="place">Chennai</h4>
@@ -137,7 +144,12 @@
                             </span>
                             </form>
                         </div>
-                    </div>     
+                    </div> 
+                    <div class="completed-nil">
+                        <button class="collapsible"><h2 id="msg1"><i class="fas fa-envelope"></i>   You don't have any current rides</h2>
+                        </button>
+                    </div>
+
                 </div>
                     <div class="column" id="cancelled">
                         <button class="collapsible"><h2 id="datetime">09 February 2019, 5.00pm</h2>

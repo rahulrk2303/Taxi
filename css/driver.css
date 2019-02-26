@@ -1155,3 +1155,46 @@ input[type="file"] {
 	padding-right: 1em;
 	font-size: 2rem;
 }
+
+.upcoming-nil, .completed-nil {
+	display: none;
+}
+
+
+.dashboard-container {
+	position: fixed;	
+	padding-top: 0em;
+	padding-left: 35em;
+	margin: 1em 5em;
+
+	float: right;
+	text-align: left;
+}
+
+.dashboard-container h2 {
+	color: #00ff6c;
+}
+
+.dashboard-container span{
+	color: white;
+	font-weight: 300;
+}
+
+.map {
+	position: relative;
+  	float: left;
+ 	margin-top: 2em;
+ 	margin-left: 2em;
+}
+
+.dashboard-container button {
+	width: 90%;
+	margin: 0.3em;
+}
+
+/*
+#driverdash h1 {
+
+	text-align: left;
+	margin-left: 1em;
+}*/

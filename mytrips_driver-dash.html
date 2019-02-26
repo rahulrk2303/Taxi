@@ -4,14 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>Rider Profile</title>
-	<link  href="css/rider.css" rel="stylesheet" type="text/css">
+	<title>Driver Profile</title>
+	<link  href="css/driver.css" rel="stylesheet" type="text/css">
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<!-- <link rel="stylesheet" type="text/css" href="css/logSign.css"> -->
+
 </head>
 
-<body  onload="upcoming()">
+<body onload="upcoming()">
 
 	<header>
 		<a href="index.html"><img src="img/logouber2.png" alt="Taxi logo" class="logo"></a>
@@ -26,23 +26,24 @@
 		</nav>
 	</header>
 	<div class="vertical-menu">
-  		<button class="button button-dark" type="button" onclick="window.open('rider_profile.html', '_self');">Book a ride</button>
-  		<button class="button button-dark" type="button" onclick="window.open('rider_profile.html', '_self');">Profile</button>
-  		<!-- <button class="button button-dark" type="submit" onclick="riderviewtrips()">My Trips</button> -->
-        <button class="button button-dark">My Trips</button>
+        <button class="button button-dark" type="submit" onclick="window.open('driver_dashboard.html', '_self');">Dashboard</button>
+        <button class="button button-dark" type="button"  onclick="window.open('driver_dashboard.html#drivercompleted', '_self');">Completed</button>
+        <button class="button button-dark" type="button" onclick="window.open('driver_dashboard.html#driverprofile', '_self');">Profile</button>
+
+                <button class="button button-dark">My Trips</button>
 
         <a class="logout" href="index.html">Logout</a>
     </div> 
- 	<div class="container3 rider">
- 			<div class="filter-ridertrips">
+ 	<div class="container3 driver">
+ 			<div class="filter-drivertrips">
                 <label>Filter by : </label>
-<!--                 <button class="button button-accent all" type="submit" onclick="all()">All</button> -->
+
                 <button class="button button-accent upcoming" type="submit" onclick="upcoming()">Upcoming</button>
                 <button class="button button-accent completed" type="submit" onclick="completed()">Completed</button>
                 <button class="button button-accent cancelled" type="submit" onclick="cancelled()">Cancelled</button>
  			</div>
 
- 			<div id="ridertrips">
+ 			<div id="drivertrips">
                 <div class="row">
                     
                     <div class="column" id="upcoming">
@@ -58,30 +59,7 @@
                             <div id="update-modal" class="modalDialog">
                                 <div>
                                     <a href="#close" title="Close" class="close">x</a>
-                                    <!-- <h2>Updated successfully.</h2> -->
-                                	<form id="updateride">
-							            <h1>Update your ride</h1>
-							            <label>Start Date </label> <input id="date" type="date" value="date"><br>
-							            <!-- <label for="time">Start Time </label> -->
-							            <label> Start Time </label><input id="time" type="time" value="time"><br>
-							            <label for="Source">Source</label>
-							            <input id="source" type="text"  placeholder="Enter Source"><br>
-							            <label for="dest">Destination</label>
-							            <input id="dest" type="text"  placeholder="Enter Destination"><br>
-							            <label>Seats </label><select id="seats">
-							                <option>3</option>
-							                <option>4</option>
-							                <option>5</option>
-							            </select>
-							            <br><br>
-							            <button class="button button-accent update" onclick="window.location.href='#ridertrips'">Update</button>
-				                            <div id="update-modal" class="modalDialog">
-				                                <!-- <div>
-				                                    <a href="#close" title="Close" class="close">x</a>
-				                                    <h2>Updated successfully.</h2>
-				                                </div> -->
-				                            </div>
-							        </form>
+                                    <h2>Updated successfully.</h2>
                                 </div>
                             </div>
                             <button class="button button-accent cancel" onclick="window.location.href='#cancel-modal'">Cancel</button>
@@ -106,7 +84,6 @@
                                 <input type="radio" name="rating" value="1"><span class="star"></span>
                             </span>
                             </form>
-
                             </div>
                         </div>
                         <div class="upcoming-nil">
@@ -114,7 +91,6 @@
                             </button>
                         </div>
                     </div>  
-
                     <div id="completed">
                     <div class="column">
                         <div class="completed-available">
@@ -172,9 +148,8 @@
                     <div class="completed-nil">
                         <button class="collapsible"><h2 id="msg1"><i class="fas fa-envelope"></i>   You don't have any current rides</h2>
                         </button>
-                    </div> 
                     </div>
-                       
+
                 </div>
                     <div class="column" id="cancelled">
                         <button class="collapsible"><h2 id="datetime">09 February 2019, 5.00pm</h2>
@@ -202,11 +177,11 @@
                         </div>
                     </div>  
                 </div>
-        </div>
+            </div>
     </div>
 
 </body>
 
-    <script src="js/rider.js"></script>
+    <script src="js/driver.js"></script>
 </html>
 
