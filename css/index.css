@@ -220,7 +220,7 @@ nav a:focus {
 
 @media (min-width: 60rem) {
 	.home-hero {
-		height: 114vh;
+		height: 150vh;
 		padding-top: 25vh;
 		text-align: left
 	}
@@ -589,3 +589,8 @@ col-1:first-child {
 	}
 
 }
+
+.driverlicense {
+	display: none;
+}
+

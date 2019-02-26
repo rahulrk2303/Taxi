@@ -687,7 +687,7 @@ input[type=submit]:hover {
   margin-left: 10vw;
 /*  margin-left: 15vw;
   margin-right: 15vw;*/
-  padding: 1em 2em;
+  padding: 3em 2em;
   width: 30%;
 
   /*border-radius: 1em;*/
@@ -1148,4 +1148,10 @@ input[type="file"] {
 
 .close:hover {
   background: #00ff6c;
+}
+
+.msgs .fa-envelope {
+	/*color: #999;*/
+	padding-right: 1em;
+	font-size: 2rem;
 }
